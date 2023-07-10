@@ -1,0 +1,26 @@
+[project]
+name = "hotfunc"
+dynamic = ["version"]
+description = "Make functions hot-reloadable with a decorator"
+readme = "README.md"
+requires-python = ">=3.4"
+keywords = ["hotreload"]
+authors = [{ name = "Michał Szajbe", email = "michal.szajbe@gmail.com" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/szajbus/hotfunc"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["hotfunc"]
+
+[tool.setuptools.dynamic]
+version = { attr = "hotfunc.VERSION" }
